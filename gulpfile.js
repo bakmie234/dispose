@@ -1,10 +1,8 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var wiredep = require('wiredep').stream;
+var taskListing = require('gulp-task-listing');
 
-gulp.task('default', function () {
-    //
-});
 gulp.task('serve', function() {
     browserSync.init({
         server: {
@@ -15,8 +13,9 @@ gulp.task('serve', function() {
     });
 });
 
+gulp.task('default', taskListing);
 
-gulp.task('bower', function () {
+gulp.task('inject', function () {
     gulp.src('./index.html')
         .pipe(wiredep())
         .pipe(gulp.dest('./'));
