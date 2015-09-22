@@ -1,0 +1,19 @@
+{
+  "name": "angular-in-github",
+  "version": "0.0.1",
+  "description": "angular in github",
+  "main": "index,html",
+  "scripts": {
+    "test": "echo \"no test yet\""
+  },
+  "keywords": [
+    "ng",
+    "github"
+  ],
+  "author": "bakmie234",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.9.5",
+    "wiredep": "^3.0.0-beta"
+  }
+}
